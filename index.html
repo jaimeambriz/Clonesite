@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<style>
+		#map {
+			height: 200px;
+			width: 100%;
+		}
+	</style>
+</head>
+
+<body>
+	<!--header -->
+	<div class="container">
+		<div class="row header-image">
+			<div class="jumbotron no-radius" style="margin-bottom:0px;">
+				<div class=col-xs-12>
+					<div class="jumbotron-content">
+						<h1 class="text-center fix-text">Life through the lens!</h1>
+						<p class="text-center">Capture the moment!</p>
+						<div class="jumbotron-button">
+							<p>
+								<a class="btn btn-primary btn-sm " href="#" role="button"><span class="fa fa-camera"></span>Learn more</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--body  -->
+		<div class="row info-thumbnail" style="background-color:white;">
+			<div class="col-xs-3">
+				<div class="thumbnail">
+					<a href="#">
+							<img src="https://s-media-cache-ak0.pinimg.com/736x/4c/df/4b/4cdf4b73ecc13a7640e25af18c45bfa5--eyewear-fashion-styles.jpg" alt="woman face" style="width:auto;height:130px;" class="img-circle">
+							<div class="caption">
+								<p class="text-center">Portrait</p>
+							</div>
+						</a>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="thumbnail">
+					<a href="#">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Altja_j%C3%B5gi_Lahemaal.jpg/1200px-Altja_j%C3%B5gi_Lahemaal.jpg" alt="nature" style="width:auto;height:130px;" class="img-circle">
+							<div class="caption">
+								<p class="text-center">Nature</p>
+							</div>
+						</a>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="thumbnail">
+					<a href="#">
+							<img src="https://s-media-cache-ak0.pinimg.com/originals/a4/ea/1e/a4ea1e8f3c464339516e0765576f29f5.jpg" alt="ocelot" style="width:auto;height:130px;" class="img-circle">
+							<div class="caption">
+								<p class="text-center">Wildlife</p>
+							</div>
+						</a>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="thumbnail">
+					<a href="#">
+							<img src="http://1hu9t72zwflj44abyp2h0pfe-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Lionel-Messi.jpg" alt="someone playing soccer" style="width:auto;height:130px;" class="img-circle">
+							<div class="caption">
+								<p class="text-center">Sports</p>
+							</div>
+						</a>
+				</div>
+			</div>
+		</div>
+
+		<!--body  -->
+
+		<div class="row email-row">
+			<div class="col-xs-12 ">
+				<p style="font-family:Arial, Helvetica, sans-serif" class="text-center">Input your email for a free subscription.</p>
+				<div class="email-input"><input class="text-center" type="text" placeholder="jon-doe@email.com"> <button class=btn-primary>Subscribe</button></div>
+			</div>
+		</div>
+		<!--map  -->
+		<div class="row google-map">
+			<div class="col-xs-12 google-map-column">
+				<div id="map"></div>
+				<script>
+					function initMap() {
+						var uluru = { lat: -13.1631, lng: -72.5450 };
+						var map = new google.maps.Map(document.getElementById('map'), {
+							zoom: 12,
+							center: uluru
+						});
+						var marker = new google.maps.Marker({
+							position: uluru,
+							map: map
+						});
+					}
+				</script>
+				<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCE01CoG1B4w_KUKeloCNqC6KqCrkLL_pw&callback=initMap">
+
+				</script>
+			</div>
+		</div>
+		<!--footer  -->
+		<div class="row footer-row" style="background-color:black;">
+			<div class="col-xs-12 footer-column">
+				<p class="text-center"> <span class="fa fa-github"></span>Payed by me</p>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

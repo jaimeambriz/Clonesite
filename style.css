@@ -1,0 +1,66 @@
+
+.container .jumbotron {
+    border-radius: 0px;
+}
+.btn-primary{
+    border:none;
+    border-radius:3px;
+}
+.jumbotron {
+    opacity: 1;
+    background: #000 url(https://www.photographycourses.biz/res/lens-glass-on-black.jpg) no-repeat center center;
+    background-size: cover;
+    height: 31rem;
+    border-radius: 0px;
+}
+.jumbotron-content{
+    padding-left: 50%;
+    color: white;
+    font-family: fantasy;
+}
+.jumbotron-button{
+    padding-left: 42%;
+}
+.info-thumbnail{
+    background-color: white;
+    padding-left:15%; 
+    padding-right:15%;
+    margin-top: 10px;
+    height: 20rem;
+}
+.thumbnail{
+    font-family: fantasy;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    border: 0px;
+}
+.email-row{
+    margin-bottom: 10px;
+}
+.email-input{
+    display: flex;
+    justify-content: center;
+}
+.col-xs-3{
+    display: flex;
+    justify-content: center;
+}
+input::placeholder {
+  color:green;
+  font-weight: bold;
+}
+.footer-column{
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 14px;
+color:white;
+}
+.google-map-column{
+    padding-left: 0px;
+    padding-right:0px;
+}
+.fix-text{
+    font-size: 50px !important;
+}
