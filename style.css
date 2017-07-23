@@ -1,5 +1,5 @@
 
-.container .jumbotron {
+.container-fluid .jumbotron {
     border-radius: 0px;
 }
 .btn-primary{
@@ -63,4 +63,8 @@ color:white;
 }
 .fix-text{
     font-size: 50px !important;
+}
+#map{
+    height: 400px;
+    width: 100%;
 }

@@ -6,17 +6,11 @@
 	 crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style.css">
-	<style>
-		#map {
-			height: 200px;
-			width: 100%;
-		}
-	</style>
 </head>
 
 <body>
 	<!--header -->
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row header-image">
 			<div class="jumbotron no-radius" style="margin-bottom:0px;">
 				<div class=col-xs-12>
@@ -25,7 +19,7 @@
 						<p class="text-center">Capture the moment!</p>
 						<div class="jumbotron-button">
 							<p>
-								<a class="btn btn-primary btn-sm " href="#" role="button"><span class="fa fa-camera"></span>Learn more</a>
+								<a class="btn btn-primary btn-sm " href="#" role="button"><i class="fa fa-camera"></i>Learn more</a>
 							</p>
 						</div>
 					</div>
@@ -90,9 +84,9 @@
 				<div id="map"></div>
 				<script>
 					function initMap() {
-						var uluru = { lat: -13.1631, lng: -72.5450 };
+						var uluru = { lat: 25.1124, lng: 55.1390};
 						var map = new google.maps.Map(document.getElementById('map'), {
-							zoom: 12,
+							zoom: 13,
 							center: uluru
 						});
 						var marker = new google.maps.Marker({
@@ -109,7 +103,7 @@
 		<!--footer  -->
 		<div class="row footer-row" style="background-color:black;">
 			<div class="col-xs-12 footer-column">
-				<p class="text-center"> <span class="fa fa-github"></span>Payed by me</p>
+				<p class="text-center"> <i class="fa fa-github"></i>Payed by me</p>
 			</div>
 		</div>
 	</div>
