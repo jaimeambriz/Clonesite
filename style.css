@@ -8,7 +8,7 @@
 }
 .jumbotron {
     opacity: 1;
-    background: #000 url(https://www.photographycourses.biz/res/lens-glass-on-black.jpg) no-repeat center center;
+    background: url(https://www.photographycourses.biz/res/lens-glass-on-black.jpg) no-repeat center center;
     background-size: cover;
     height: 31rem;
     border-radius: 0px;
