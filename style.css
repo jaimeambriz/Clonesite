@@ -36,7 +36,8 @@
     border: 0px;
 }
 .email-row{
-    margin-bottom: 10px;
+    height: 85px;
+    background-color: #132eb2;
 }
 .email-input{
     display: flex;
@@ -65,6 +66,6 @@ color:white;
     font-size: 50px !important;
 }
 #map{
-    height: 400px;
+    height: 300px;
     width: 100%;
 }
